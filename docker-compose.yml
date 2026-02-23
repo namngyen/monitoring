@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3"
 
 services:
 
@@ -25,7 +25,7 @@ services:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
-      - '--enable-feature=agent'
+      - '--mode=agent'
     networks:
       - monitoring
     environment:

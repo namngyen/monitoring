@@ -1,8 +1,8 @@
 ﻿global:
   scrape_interval: 15s
 
-external_labels:
-  hostname: "${HOSTNAME}"
+  external_labels:
+    hostname: "${HOSTNAME}"
 
 scrape_configs:
   - job_name: "node"
