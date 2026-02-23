@@ -28,7 +28,8 @@ services:
       - '--enable-feature=agent'
     networks:
       - monitoring
-
+    environment:
+      - HOSTNAME=${SERVER_NAME}
 networks:
   monitoring:
     driver: bridge
