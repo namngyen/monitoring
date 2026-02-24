@@ -11,5 +11,3 @@ scrape_configs:
 
 remote_write:
   - url: "${SERVER_REMOTE}"
-    tls_config:
-      insecure_skip_verify: true
